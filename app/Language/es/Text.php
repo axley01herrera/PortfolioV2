@@ -34,6 +34,7 @@ $lang['cert_page_title'] = 'Certificaciones';
 
 # Projects Page
 $lang['projects_page_title'] = 'Proyectos';
+$lang['projects_business_online'] = 'Tu negocio en línea';
 $lang['projects_btn_view_demo'] = 'Ir al Proyecto';
 $lang['projects_project_exhibition'] = 'Exposición del Proyecto';
 $lang['projects_tpv_shop_exhibition'] = 'He implementado un proyecto personal en un pequeño negocio local que se traduce en una caja registradora digital. Esta caja registradora digital permite a los usuarios crear productos y generar tickets de venta para sus clientes de manera sencilla. Además, ofrece un práctico panel de informes que facilita la creación de reportes basados en un rango de fechas seleccionado y un panel de configuración para ajustar las preferencias según las necesidades del negocio.';

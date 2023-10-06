@@ -34,6 +34,7 @@ $lang['cert_page_title'] = 'Certifications';
 
 # Projects Page
 $lang['projects_page_title'] = 'Projects';
+$lang['projects_business_online'] = 'Your online business';
 $lang['projects_btn_view_demo'] = 'Go to Project';
 $lang['projects_project_exhibition'] = 'Project Exhibition';
 $lang['projects_tpv_shop_exhibition'] = 'I have implemented a personal project in a small local business, which consists of a digital cash register. This digital cash register allows users to create products and generate sales receipts for their customers effortlessly. Additionally, it offers a convenient reporting dashboard for creating reports based on a selected date range and a configuration panel for adjusting preferences to suit the business needs.';
