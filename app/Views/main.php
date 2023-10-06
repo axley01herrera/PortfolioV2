@@ -9,39 +9,39 @@
     <meta content="Axley Herrera" name="author" />
 
     <!-- ICON -->
-    <link rel="shortcut icon" href="<?php echo base_url('assets/images/app-icon.ico'); ?>">
+    <link rel="shortcut icon" href="<?php echo base_url('public/assets/images/app-icon.ico'); ?>">
 
     <!-- CSS -->
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/jsvectormap/css/jsvectormap.min.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/icons.min.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/app.min.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/jquery-ui/jquery-ui.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/select2/css/select2.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/sweetalert/sweetalert2.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/apexcharts/dist/apexcharts.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/css/datatable/dataTables.bootstrap5.min.css'); ?>" />
-    <link type="text/css" rel="stylesheet" href="<?php echo base_url('assets/libs/glightbox/css/glightbox.min.css'); ?>">
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/jsvectormap/css/jsvectormap.min.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/css/bootstrap.min.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/css/icons.min.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/css/app.min.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/jquery-ui/jquery-ui.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/select2/css/select2.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/sweetalert/sweetalert2.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/apexcharts/dist/apexcharts.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/css/datatable/dataTables.bootstrap5.min.css'); ?>" />
+    <link type="text/css" rel="stylesheet" href="<?php echo base_url('public/assets/libs/glightbox/css/glightbox.min.css'); ?>">
 
     <!-- JS -->
-    <script src="<?php echo base_url('assets/libs/jquery/jquery.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/metismenujs/metismenujs.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/simplebar/simplebar.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/feather-icons/feather.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/jsvectormap/js/jsvectormap.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/jsvectormap/maps/world-merc.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/jquery-ui/jquery-ui.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/select2/js/select2.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/imask/jquery.inputmask.bundle.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/moment/moment.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/sweetalert/sweetalert2.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/customApp.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/apexcharts/dist/apexcharts.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/datatable/jquery.dataTables.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/js/datatable/dataTables.bootstrap5.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/glightbox/js/glightbox.min.js'); ?>"></script>
-    <script src="<?php echo base_url('assets/libs/isotope-layout/isotope.pkgd.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/jquery/jquery.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/bootstrap/js/bootstrap.bundle.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/metismenujs/metismenujs.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/simplebar/simplebar.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/feather-icons/feather.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/jsvectormap/js/jsvectormap.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/jsvectormap/maps/world-merc.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/jquery-ui/jquery-ui.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/select2/js/select2.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/imask/jquery.inputmask.bundle.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/moment/moment.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/sweetalert/sweetalert2.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/js/customApp.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/apexcharts/dist/apexcharts.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/js/datatable/jquery.dataTables.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/js/datatable/dataTables.bootstrap5.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/glightbox/js/glightbox.min.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/libs/isotope-layout/isotope.pkgd.min.js'); ?>"></script>
 </head>
 
 <body style="background-color: #f2f3fe;">
@@ -52,10 +52,10 @@
                     <div class="navbar-brand-box">
                         <a href="<?php echo base_url('Main/home'); ?>?lang=<?php echo $lang; ?>" class="logo logo-dark">
                             <span class="logo-sm">
-                                <img src="<?php echo base_url("assets/images/logo-sm.png"); ?>" alt="axley herrera portafolio" height="22">
+                                <img src="<?php echo base_url("public/assets/images/logo-sm.png"); ?>" alt="axley herrera portafolio" height="22">
                             </span>
                             <span class="logo-lg">
-                                <img src="<?php echo base_url("assets/images/logo-dark.png"); ?>" alt="axley herrera portafolio" height="22">
+                                <img src="<?php echo base_url("public/assets/images/logo-dark.png"); ?>" alt="axley herrera portafolio" height="22">
                             </span>
                         </a>
                     </div>
@@ -69,24 +69,24 @@
                             <?php
                             if ($lang == "en") {
                             ?>
-                                <img id="header-lang-img" src="<?php echo base_url("assets/images/flags/us.jpg"); ?>" alt="english" height="16">
+                                <img id="header-lang-img" src="<?php echo base_url("public/assets/images/flags/us.jpg"); ?>" alt="english" height="16">
                             <?php
                             } elseif ($lang == "es") {
                             ?>
-                                <img id="header-lang-img" src="<?php echo base_url("assets/images/flags/spain.jpg"); ?>" alt="spanish" height="16">
+                                <img id="header-lang-img" src="<?php echo base_url("public/assets/images/flags/spain.jpg"); ?>" alt="spanish" height="16">
                             <?php
                             }
                             ?>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="<?php echo $route . '?lang=en'; ?>" class="dropdown-item notify-item">
-                                <img src="<?php echo base_url('assets/images/flags/us.jpg'); ?>" alt="english" class="me-1" height="12">
+                                <img src="<?php echo base_url('public/assets/images/flags/us.jpg'); ?>" alt="english" class="me-1" height="12">
                                 <span class="align-middle">
                                     <?php echo lang("Text.english"); ?>
                                 </span>
                             </a>
                             <a href="<?php echo $route . '?lang=es'; ?>" class="dropdown-item notify-item">
-                                <img src="<?php echo base_url("assets/images/flags/spain.jpg"); ?>" alt="spanish" class="me-1" height="12">
+                                <img src="<?php echo base_url("public/assets/images/flags/spain.jpg"); ?>" alt="spanish" class="me-1" height="12">
                                 <span class="align-middle">
                                     <?php echo lang("Text.spanish"); ?>
                                 </span>
@@ -95,7 +95,7 @@
                     </div>
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="<?php echo base_url('assets/images/users/avatar-1.jpg'); ?>" alt="Avatar">
+                            <img class="rounded-circle header-profile-user" src="<?php echo base_url('public/assets/images/users/avatar-1.jpg'); ?>" alt="Avatar">
                             <span class="ms-2 d-none d-sm-block user-item-desc">
                                 <span class="user-name">Axley Herrera</span>
                                 <span class="user-sub-title"><?php echo lang('Text.developer'); ?></span>
@@ -116,10 +116,10 @@
             <div class="navbar-brand-box">
                 <a href="<?php echo base_url('Main/home'); ?>?lang=<?php echo $lang; ?>" class="logo logo-dark">
                     <span class="logo-sm">
-                        <img src="<?php echo base_url("assets/images/logo-sm.png"); ?>" alt="axley herrera portafolio" height="22">
+                        <img src="<?php echo base_url("public/assets/images/logo-sm.png"); ?>" alt="axley herrera portafolio" height="22">
                     </span>
                     <span class="logo-lg">
-                        <img src="<?php echo base_url("assets/images/logo-dark.png"); ?>" alt="axley herrera portafolio" height="22">
+                        <img src="<?php echo base_url("public/assets/images/logo-dark.png"); ?>" alt="axley herrera portafolio" height="22">
                     </span>
                 </a>
             </div>
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    <script src="<?php echo base_url('assets/js/app.js'); ?>"></script>
+    <script src="<?php echo base_url('public/assets/js/app.js'); ?>"></script>
 </body>
 
 <script>

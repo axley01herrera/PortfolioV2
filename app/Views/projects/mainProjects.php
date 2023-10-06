@@ -17,7 +17,7 @@
     <div class="card mt-5">
         <div class="row no-gutters align-items-center">
             <div class="col-md-4">
-                <img class="card-img img-fluid" src="<?php echo base_url('assets/images/projects/appointment01.jpg'); ?>" alt="tpv">
+                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/projects/appointment01.jpg'); ?>" alt="tpv">
             </div>
             <div class="col-md-8">
                 <div class="card-body">
@@ -31,7 +31,7 @@
     <div class="card mt-5">
         <div class="row no-gutters align-items-center">
             <div class="col-md-4">
-                <img class="card-img img-fluid" src="<?php echo base_url('assets/images/projects/tpvshop01.jpg'); ?>" alt="tpv">
+                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/projects/tpvshop01.jpg'); ?>" alt="tpv">
             </div>
             <div class="col-md-8">
                 <div class="card-body">

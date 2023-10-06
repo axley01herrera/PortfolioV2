@@ -19,7 +19,7 @@
             <div class="card mt-n5">
                 <div class="card-body text-center">
                     <div class="avatar-xl mx-auto mb-4">
-                        <img src="<?php echo base_url('assets/images/users/avatar-1.jpg'); ?>" alt="Avatar" class="rounded-circle img-thumbnail">
+                        <img src="<?php echo base_url('public/assets/images/users/avatar-1.jpg'); ?>" alt="Avatar" class="rounded-circle img-thumbnail">
                     </div>
                     <h5 class="mb-1">Axley Herrera</h5>
                     <p class="text-muted"><?php echo lang('Text.developer'); ?></p>

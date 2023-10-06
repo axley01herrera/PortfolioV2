@@ -23,7 +23,7 @@ class Main extends BaseController
         $this->objEmail = \Config\Services::email($emailConfig);
 
         helper('Site');
-        setLanguage($this->request->getPostGet('lang'));
+        setLanguage($this->objRequest->getPostGet('lang'));
     }
 
     public function home()
@@ -32,7 +32,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'home';
         # lang
-        $data['lang'] = $this->request->getLocale();
+        $data['lang'] = $this->objRequest->getLocale();
         # page 
         $data['route'] = base_url('Main/home');
         $data['page'] = "home/mainHome";
@@ -47,7 +47,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'certifications';
         # lang
-        $data['lang'] = $this->request->getLocale();
+        $data['lang'] = $this->objRequest->getLocale();
         # page 
         $data['route'] = base_url('Main/certifications');
         $data['page'] = "certifications/mainCertifications";
@@ -62,7 +62,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'projects';
         # lang
-        $data['lang'] = $this->request->getLocale();
+        $data['lang'] = $this->objRequest->getLocale();
         # page 
         $data['route'] = base_url('Main/projects');
         $data['page'] = "projects/mainProjects";
@@ -77,7 +77,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'contact';
         # lang
-        $data['lang'] = $this->request->getLocale();
+        $data['lang'] = $this->objRequest->getLocale();
         # page 
         $data['route'] = base_url('Main/contact');
         $data['page'] = "contact/mainContact";
