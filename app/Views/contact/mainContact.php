@@ -37,14 +37,6 @@
                             <label for="txt-description<?php echo $uniquid; ?>"><?php echo lang('Text.description'); ?></label>
                             <textarea id="txt-description<?php echo $uniquid; ?>" class="form-control required" rows="10"></textarea>
                         </div>
-                        <div class="col-12 mt-2">
-                            <label for="sel-project<?php echo $uniquid; ?>"><?php echo lang('Text.project'); ?></label>
-                            <select id="sel-project<?php echo $uniquid; ?>" class="form-select">
-                                <option value="" hidden></option>
-                                <option value="Negocio Citas Online">Negocio Citas Online</option>
-                                <option value="TPV_Shop">TPV_Shop</option>
-                            </select>
-                        </div>
                         <div class="col-12 text-center mt-5">
                             <button id="btn-send" class="btn btn-primary"><?php echo lang('Text.send'); ?></button>
                         </div>
@@ -68,8 +60,7 @@
                     'name': $('#txt-name<?php echo $uniquid; ?>').val(),
                     'lastName': $('#txt-lastName<?php echo $uniquid; ?>').val(),
                     'email': $('#txt-email<?php echo $uniquid; ?>').val(),
-                    'description': $('#txt-description<?php echo $uniquid; ?>').val(),
-                    'project': $('#sel-project<?php echo $uniquid; ?>').val()
+                    'description': $('#txt-description<?php echo $uniquid; ?>').val()
                 },
                 dataType: "json",
                 success: function(response) {

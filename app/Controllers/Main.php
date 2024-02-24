@@ -95,7 +95,7 @@ class Main extends BaseController
         $emailData['lastName'] = htmlspecialchars(trim($this->objRequest->getPost('lastName')));
         $emailData['email'] = htmlspecialchars(trim($this->objRequest->getPost('email')));
         $emailData['description'] = htmlspecialchars(trim($this->objRequest->getPost('description')));
-        $emailData['project'] = htmlspecialchars(trim($this->objRequest->getPost('project')));
+        $emailData['project'] = "";
 
         if(!empty($emailData['name']) && !empty($emailData['lastName']) && !empty($emailData['email'])) {
             $this->objEmail->setFrom(EMAIL_SMTP_USER, 'Portfolio');
