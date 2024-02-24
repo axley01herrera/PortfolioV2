@@ -23,7 +23,7 @@
                 <div class="card-body">
                     <h5 class="card-title mb-1"><?php echo lang('Text.projects_business_online'); ?></h5>
                     <p class="card-text"><?php echo lang('Text.projects_tpv_appointment_exhibition'); ?></p>
-                    <a href="https://negociocitas.online/" target="_blank" class="btn btn-primary"><?php echo lang('Text.projects_btn_view_demo'); ?></a>
+                    <a href="https://profileonline.axleyherrera.com/" target="_blank" class="btn btn-primary"><?php echo lang('Text.projects_btn_view_demo'); ?></a>
                 </div>
             </div>
         </div>
