@@ -114,7 +114,7 @@
                                         <div class="swiper-wrapper">
                                             <div class="swiper-slide">
                                                 <div class="event-list pb-2">
-                                                    <p class="font-size-13 text-primary">2019 - 2023</p>
+                                                    <p class="font-size-13 text-primary">2019 - 2024</p>
                                                     <h5 class="font-size-14 mb-1"><?php echo lang('Text.home_full_stack_developer'); ?></h5>
                                                     <p class="text-muted mb-0">Ojeda's Computing LLC</p>
                                                 </div>
@@ -130,10 +130,10 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3"><?php echo lang('Text.home_frontend_skills'); ?></h5>
                                 <div class="d-flex flex-wrap gap-2 font-size-16">
-                                    <span class="badge badge-soft-primary">Html5</span>
-                                    <span class="badge badge-soft-primary">Css</span>
+                                    <span class="badge badge-soft-primary">html</span>
+                                    <span class="badge badge-soft-primary">css</span>
                                     <span class="badge badge-soft-primary">Bootstrap</span>
-                                    <span class="badge badge-soft-primary">Manejo de UI Templates</span>
+                                    <span class="badge badge-soft-primary">UI Templates</span>
                                     <span class="badge badge-soft-primary">JavaScript</span>
                                     <span class="badge badge-soft-primary">jQuery</span>
                                     <span class="badge badge-soft-primary">TypeScript</span>
@@ -144,7 +144,7 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3"><?php echo lang('Text.home_backend_skills'); ?></h5>
                                 <div class="d-flex flex-wrap gap-2 font-size-16">
-                                    <span class="badge badge-soft-primary">PHP</span>
+                                    <span class="badge badge-soft-primary">php</span>
                                     <span class="badge badge-soft-primary">Api Rest</span>
                                     <span class="badge badge-soft-primary">MySql</span>
                                     <span class="badge badge-soft-primary">PostgreSQL</span>
@@ -158,9 +158,9 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3">Frameworks</h5>
                                 <div class="d-flex flex-wrap gap-2 font-size-16">
-                                    <span class="badge badge-soft-primary">Codeigniter v3, v4</span>
-                                    <span class="badge badge-soft-primary">Laravel v8, v9</span>
-                                    <span class="badge badge-soft-primary">Ionic v6 + Angular</span>
+                                    <span class="badge badge-soft-primary">Codeigniter</span>
+                                    <span class="badge badge-soft-primary">Laravel</span>
+                                    <span class="badge badge-soft-primary">Ionic + Angular</span>
                                 </div>
                             </div>
                         </div>
@@ -168,10 +168,9 @@
                             <div class="card-body">
                                 <h5 class="card-title mb-3"><?php echo lang('Text.home_tools'); ?></h5>
                                 <div class="d-flex flex-wrap gap-2 font-size-16">
-                                    <span class="badge badge-soft-primary">Git, Github</span>
-                                    <span class="badge badge-soft-primary">Jira, Trello</span>
-                                    <span class="badge badge-soft-primary">Wamp, Laragon</span>
-                                    <span class="badge badge-soft-primary">Visual Studio Code</span>
+                                    <span class="badge badge-soft-primary">Git</span>
+                                    <span class="badge badge-soft-primary">Jira</span>
+                                    <span class="badge badge-soft-primary">Trello</span>
                                 </div>
                             </div>
                         </div>
