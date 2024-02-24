@@ -34,13 +34,10 @@ $lang['cert_page_title'] = 'Certifications';
 
 # Projects Page
 $lang['projects_page_title'] = 'Projects';
-$lang['projects_business_online'] = 'Your online business';
+$lang['projects_business_online'] = 'Your profile online';
 $lang['projects_btn_view_demo'] = 'Go to Project';
 $lang['projects_project_exhibition'] = 'Project Exhibition';
-$lang['projects_tpv_shop_exhibition'] = 'I have implemented a personal project in a small local business, which consists of a digital cash register. This digital cash register allows users to create products and generate sales receipts for their customers effortlessly. Additionally, it offers a convenient reporting dashboard for creating reports based on a selected date range and a configuration panel for adjusting preferences to suit the business needs.';
-$lang['projects_tpv_appointment_exhibition'] = "If you are looking to improve appointment management and online visibility for your business, we invite you to learn about this innovative tool and discover how it can transform your operation in a digital environment.
-Efficient appointment management is essential to the success of your business. A personalized tool fully adapted to your needs can make a difference in your effectiveness. I am pleased to present you a solution that offers complete automation of your clients' reservations and an online presence. This application gives you the ability to carry out reservations efficiently, guaranteeing secure and digital control of your clients' appointments.
-An example of a business that is already experiencing the potential of this application, Alcapone Barber Shop, has managed to manage its reservations automatically and efficiently, improving its service and satisfying the needs of its customers.";
+$lang['projects_tpv_appointment_exhibition'] = "Online visibility for you and your profession, we invite you to learn about this innovative tool and discover how it can transform your operation in a digital environment. A personalized tool fully adapted to your needs can make a difference in your effectiveness. I am pleased to present you a solution that offers complete booking automation. This application gives you the ability to carry out reservations efficiently, guaranteeing secure and digital control of your clients' appointments. It also includes POS and Reports.";
 
 # Contact Page
 $lang['contact_page_title'] = 'Contact';

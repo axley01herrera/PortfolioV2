@@ -34,13 +34,10 @@ $lang['cert_page_title'] = 'Certificaciones';
 
 # Projects Page
 $lang['projects_page_title'] = 'Proyectos';
-$lang['projects_business_online'] = 'Tu negocio en línea';
+$lang['projects_business_online'] = 'Tu perfil en línea';
 $lang['projects_btn_view_demo'] = 'Ir al Proyecto';
 $lang['projects_project_exhibition'] = 'Exposición del Proyecto';
-$lang['projects_tpv_shop_exhibition'] = 'He implementado un proyecto personal en un pequeño negocio local que se traduce en una caja registradora digital. Esta caja registradora digital permite a los usuarios crear productos y generar tickets de venta para sus clientes de manera sencilla. Además, ofrece un práctico panel de informes que facilita la creación de reportes basados en un rango de fechas seleccionado y un panel de configuración para ajustar las preferencias según las necesidades del negocio.';
-$lang['projects_tpv_appointment_exhibition'] = "Si busca mejorar la gestión de citas y la visibilidad en línea para su negocio, le invitamos a conocer esta innovadora herramienta y descubrir cómo puede transformar su operación en un entorno digital.
-La gestión eficiente de las citas es esencial para el éxito de tu negocio. Una herramienta personalizada y totalmente adaptada a tus necesidades puede marcar la diferencia en tu eficacia. Me complace presentarle una solución que ofrece automatización completa de las reservas por parte de tus clientes y una presencia en línea. Esta aplicación le brinda la capacidad de llevar a cabo reservas de manera eficiente, garantizando un control seguro y digital de las citas de tus clientes.
-Ejemplo de negocio que ya está experimentando el potencial de esta aplicación, Alcapone Barber Shop, ha logrado gestionar sus reservas de manera automática y eficaz, mejorando su servicio y satisfaciendo las necesidades de sus clientes.";
+$lang['projects_tpv_appointment_exhibition'] = "Visibilidad en línea para usted y su profesión, le invitamos a conocer esta innovadora herramienta y descubrir cómo puede transformar su operación en un entorno digital. Una herramienta personalizada y totalmente adaptada a tus necesidades puede marcar la diferencia en tu eficacia. Me complace presentarle una solución que ofrece automatización completa de reservas. Esta aplicación le brinda la capacidad de llevar a cabo reservas de manera eficiente, garantizando un control seguro y digital de las citas de tus clientes. Además incluye TPV y Reportes.";
 
 # Contact Page
 $lang['contact_page_title'] = 'Contacto';
