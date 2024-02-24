@@ -66,9 +66,8 @@
                 success: function(response) {
                     if (response.error == 0) {
                         showAlert('success', '<?php echo lang('Text.success'); ?>', '<?php echo lang('Text.success_email_recived'); ?>');
-                        setTimeout(() => {
-                            window.location.reload();
-                        }, "2000");
+                        $('input').val('');
+                        $('textarea').val('');
                     } else
                         showAlert('error', '<?php echo lang('Text.important'); ?>', '<?php echo lang('Text.error'); ?>');
                 },

@@ -4,7 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <title>Email de Contacto</title>
+    <title>Contact Email</title>
 </head>
 
 <body style="margin:0px; background: #f8f8f8; ">
@@ -30,9 +30,6 @@
                                 </p>
                                 <p>
                                     Descripción: <?php echo $description; ?>
-                                </p>
-                                <p>
-                                    Proyecto: <?php echo $project; ?>
                                 </p>
                             </td>
                         </tr>
