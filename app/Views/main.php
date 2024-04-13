@@ -89,7 +89,7 @@
                     </div>
                     <div class="dropdown d-inline-block">
                         <button type="button" class="btn header-item user text-start d-flex align-items-center" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <img class="rounded-circle header-profile-user" src="<?php echo base_url('public/assets/images/users/avatar-1.jpg'); ?>" alt="Avatar">
+                            <img class="rounded-circle header-profile-user" src="<?php echo base_url('public/assets/images/users/Axley.jpg'); ?>" alt="Axley Herrera">
                             <span class="ms-2 d-none d-sm-block user-item-desc">
                                 <span class="user-name">Axley Herrera</span>
                                 <span class="user-sub-title"><?php echo lang('Text.developer'); ?></span>
