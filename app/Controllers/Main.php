@@ -6,10 +6,11 @@ class Main extends BaseController
 {
     protected $objRequest;
     protected $objEmail;
+    protected $lang;
 
     public function __construct()
     {
-        $this->objRequest = \Config\Services::request();
+        session();
 
         $emailConfig = array();
         $emailConfig['protocol'] = EMAIL_PROTOCOL;
@@ -20,10 +21,26 @@ class Main extends BaseController
         $emailConfig['SMTPCrypto'] = EMAIL_SMTP_CRYPTO;
         $emailConfig['mailType'] = EMAIL_MAIL_TYPE;
 
+        # Services
+        $this->objRequest = \Config\Services::request();
         $this->objEmail = \Config\Services::email($emailConfig);
 
-        helper('Site');
-        setLanguage($this->objRequest->getPostGet('lang'));
+        # Set Lang
+        if ($this->objRequest->getGet('lang'))
+            session()->set('lang', $this->objRequest->getGet('lang'));
+        else if (session('lang') === null) {
+            $acceptLanguage = $this->objRequest->getHeaderLine('accept-language');
+            $browserLang = explode(',', $acceptLanguage);
+            session()->set('lang', $browserLang[0]);
+        }
+
+        if (strpos(session('lang'), 'es') === 0)
+            session()->set('lang', 'es');
+        elseif (strpos(session('lang'), 'en') === 0)
+            session()->set('lang', 'en');
+
+        $this->lang = session('lang');
+        $this->objRequest->setLocale($this->lang);
     }
 
     public function home()
@@ -32,7 +49,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'home';
         # lang
-        $data['lang'] = $this->objRequest->getLocale();
+        $data['lang'] = $this->lang;
         # page 
         $data['route'] = base_url('Main/home');
         $data['page'] = "home/mainHome";
@@ -47,7 +64,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'certifications';
         # lang
-        $data['lang'] = $this->objRequest->getLocale();
+        $data['lang'] = $this->lang;
         # page 
         $data['route'] = base_url('Main/certifications');
         $data['page'] = "certifications/mainCertifications";
@@ -62,7 +79,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'projects';
         # lang
-        $data['lang'] = $this->objRequest->getLocale();
+        $data['lang'] = $this->lang;
         # page 
         $data['route'] = base_url('Main/projects');
         $data['page'] = "projects/mainProjects";
@@ -77,7 +94,7 @@ class Main extends BaseController
         # menu
         $data['active'] = 'contact';
         # lang
-        $data['lang'] = $this->objRequest->getLocale();
+        $data['lang'] = $this->lang;
         # page 
         $data['route'] = base_url('Main/contact');
         $data['page'] = "contact/mainContact";
@@ -96,12 +113,12 @@ class Main extends BaseController
         $emailData['email'] = htmlspecialchars(trim($this->objRequest->getPost('email')));
         $emailData['description'] = htmlspecialchars(trim($this->objRequest->getPost('description')));
 
-        if(!empty($emailData['name']) && !empty($emailData['lastName']) && !empty($emailData['email'])) {
+        if (!empty($emailData['name']) && !empty($emailData['lastName']) && !empty($emailData['email'])) {
             $this->objEmail->setFrom(EMAIL_SMTP_USER, 'Portfolio');
             $this->objEmail->setTo('axley01herrera@gmail.com');
             $this->objEmail->setSubject('Contacto desde Portafolio');
             $this->objEmail->setMessage(view('email/contactEmail', $emailData));
-    
+
             if ($this->objEmail->send(false)) {
                 $result = array();
                 $result['error'] = 0;
@@ -111,7 +128,7 @@ class Main extends BaseController
                 $result['error'] = 1;
                 $result['msg'] = 'error send email';
             }
-    
+
             return json_encode($result);
         }
     }

@@ -66,17 +66,11 @@
                 <div class="d-flex">
                     <div class="dropdown d-inline-block language-switch">
                         <button type="button" class="btn header-item" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <?php
-                            if ($lang == "en") {
-                            ?>
+                            <?php if ($lang == "en") { ?>
                                 <img id="header-lang-img" src="<?php echo base_url("public/assets/images/flags/us.jpg"); ?>" alt="english" height="16">
-                            <?php
-                            } elseif ($lang == "es") {
-                            ?>
+                            <?php } elseif ($lang == "es") { ?>
                                 <img id="header-lang-img" src="<?php echo base_url("public/assets/images/flags/spain.jpg"); ?>" alt="spanish" height="16">
-                            <?php
-                            }
-                            ?>
+                            <?php } ?>
                         </button>
                         <div class="dropdown-menu dropdown-menu-end">
                             <a href="<?php echo $route . '?lang=en'; ?>" class="dropdown-item notify-item">
