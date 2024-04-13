@@ -17,7 +17,7 @@
     <div class="card mt-5">
         <div class="row no-gutters align-items-center">
             <div class="col-md-4">
-                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/projects/barberHi.png'); ?>" alt="barberHi" />
+                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/projects/BarberHi.jpg'); ?>" alt="barberHi" />
             </div>
             <div class="col-md-8">
                 <div class="card-body">
