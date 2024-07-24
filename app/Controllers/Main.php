@@ -111,12 +111,13 @@ class Main extends BaseController
             try {
                 $this->resend->emails->send([
                     'from' => 'Portafolio <no-reply@axleyherrera.com>',
-                    'to' => [$emailData['email']],
+                    'to' => ['dev@axleyherrera.com'],
                     'subject' => "Hola Axley",
                     'html' => view('email/contactMail', $emailData)
                 ]);
             } catch (\Exception $e) {
             }
+
             $result = array();
             $result['error'] = 0;
             $result['msg'] = 'success';
