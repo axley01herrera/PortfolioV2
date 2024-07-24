@@ -2,28 +2,20 @@
 
 namespace App\Controllers;
 
+use Resend;
+
 class Main extends BaseController
 {
     protected $objRequest;
-    protected $objEmail;
     protected $lang;
+    protected $resend;
 
     public function __construct()
     {
         session();
 
-        $emailConfig = array();
-        $emailConfig['protocol'] = EMAIL_PROTOCOL;
-        $emailConfig['SMTPHost'] = EMAIL_SMTP_HOST;
-        $emailConfig['SMTPUser'] = EMAIL_SMTP_USER;
-        $emailConfig['SMTPPass'] = EMAIL_SMTP_PASSWORD;
-        $emailConfig['SMTPPort'] = EMAIL_SMTP_PORT;
-        $emailConfig['SMTPCrypto'] = EMAIL_SMTP_CRYPTO;
-        $emailConfig['mailType'] = EMAIL_MAIL_TYPE;
-
         # Services
         $this->objRequest = \Config\Services::request();
-        $this->objEmail = \Config\Services::email($emailConfig);
 
         # Set Lang
         if ($this->objRequest->getGet('lang'))
@@ -41,6 +33,7 @@ class Main extends BaseController
 
         $this->lang = session('lang');
         $this->objRequest->setLocale($this->lang);
+        $this->resend = Resend::client('re_i4RxWs7P_CapjMbiB4jHosShLAyUbfK9g');
     }
 
     public function home()
@@ -114,20 +107,19 @@ class Main extends BaseController
         $emailData['description'] = htmlspecialchars(trim($this->objRequest->getPost('description')));
 
         if (!empty($emailData['name']) && !empty($emailData['lastName']) && !empty($emailData['email'])) {
-            $this->objEmail->setFrom(EMAIL_SMTP_USER, 'Portfolio');
-            $this->objEmail->setTo('axley01herrera@gmail.com');
-            $this->objEmail->setSubject('Contacto desde Portafolio');
-            $this->objEmail->setMessage(view('email/contactEmail', $emailData));
-
-            if ($this->objEmail->send(false)) {
-                $result = array();
-                $result['error'] = 0;
-                $result['msg'] = 'success';
-            } else {
-                $result = array();
-                $result['error'] = 1;
-                $result['msg'] = 'error send email';
+            
+            try {
+                $this->resend->emails->send([
+                    'from' => 'Portafolio <no-reply@axleyherrera.com>',
+                    'to' => [$emailData['email']],
+                    'subject' => "Hola Axley",
+                    'html' => view('email/contactMail', $emailData)
+                ]);
+            } catch (\Exception $e) {
             }
+            $result = array();
+            $result['error'] = 0;
+            $result['msg'] = 'success';
 
             return json_encode($result);
         }
