@@ -33,7 +33,7 @@ class Main extends BaseController
 
         $this->lang = session('lang');
         $this->objRequest->setLocale($this->lang);
-        $this->resend = Resend::client('re_i4RxWs7P_CapjMbiB4jHosShLAyUbfK9g');
+        $this->resend = Resend::client(RESEND_KEY);
     }
 
     public function home()
