@@ -24,12 +24,12 @@
                     <tbody>
                         <tr>
                             <td>
-                                <h5><?php echo $name . ' ' . $lastName; ?></h5>
+                                <h5><?php echo @$name . ' ' . @$lastName; ?></h5>
                                 <p>
-                                    Email: <?php echo $email; ?>
+                                    Email: <?php echo @$email; ?>
                                 </p>
                                 <p>
-                                    Descripción: <?php echo $description; ?>
+                                    Descripción: <?php echo @$description; ?>
                                 </p>
                             </td>
                         </tr>

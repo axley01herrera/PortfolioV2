@@ -63,7 +63,7 @@
                     'description': $('#txt-description<?php echo $uniquid; ?>').val()
                 },
                 dataType: "json",
-                success: function(response) {
+                success: function(response) { console.log(response)
                     if (response.error == 0) {
                         showAlert('success', '<?php echo lang('Text.success'); ?>', '<?php echo lang('Text.success_email_recived'); ?>');
                         $('input').val('');

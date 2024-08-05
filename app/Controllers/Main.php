@@ -107,15 +107,19 @@ class Main extends BaseController
         $emailData['description'] = htmlspecialchars(trim($this->objRequest->getPost('description')));
 
         if (!empty($emailData['name']) && !empty($emailData['lastName']) && !empty($emailData['email'])) {
-            
             try {
                 $this->resend->emails->send([
                     'from' => 'Portafolio <no-reply@axleyherrera.com>',
                     'to' => ['dev@axleyherrera.com'],
                     'subject' => "Hola Axley",
-                    'html' => view('email/contactMail', $emailData)
+                    'html' => view('email/contactEmail', $emailData)
                 ]);
             } catch (\Exception $e) {
+                $result = array();
+                $result['error'] = 1;
+                $result['msg'] = $e->getMessage();
+
+                return json_encode($result);
             }
 
             $result = array();
@@ -124,5 +128,11 @@ class Main extends BaseController
 
             return json_encode($result);
         }
+
+        $result = array();
+        $result['error'] = 1;
+        $result['msg'] = 'Missing required fields';
+
+        return json_encode($result);
     }
 }
