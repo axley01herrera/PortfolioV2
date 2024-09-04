@@ -58,6 +58,6 @@ $lang['important'] = 'Importante';
 $lang['invalid_form_values'] = 'Rectifique los datos del formulario';
 $lang['error'] = 'Ha ocurrido un error';
 $lang['success'] = 'Perfecto';
-$lang['success_email_recived'] = 'Hemos recivido tu mensaje';
+$lang['success_email_recived'] = 'Hemos recibido tu mensaje.';
 
 return $lang;
