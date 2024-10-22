@@ -781,7 +781,7 @@ body[data-sidebar="brand"] .vertical-menu {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url("../images/profile-bg.jpg");
+    background-image: url("../images/profile-bg.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -4733,7 +4733,7 @@ body[data-layout-mode="dark"] .hori-timeline.timeline-card .event-list-item {
 
 .profile-bg {
   height: 210px;
-  background-image: url("../images/profile-bg.jpg");
+  background-image: url("../images/profile-bg.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -4742,7 +4742,7 @@ body[data-layout-mode="dark"] .hori-timeline.timeline-card .event-list-item {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("../images/profile-bg.jpg"); }
+  background-image: url("../images/profile-bg.png"); }
 
 .pricing-box {
   border-top: 2px solid #038edc; }

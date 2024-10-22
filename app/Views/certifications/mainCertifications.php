@@ -1,20 +1,5 @@
 <div class="container-fluid">
-    <div class="mx-n4 mt-n4">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card mb-0">
-                    <div class="card-body p-0">
-                        <div class="profile-bg position-relative overflow-hidden">
-                            <div class=" ms-5 mt-5">
-                                <h1 class="text-white"><?php echo lang('Text.cert_page_title'); ?></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="row mt-5">
+    <div class="row">
         <div class="col-lg-12">
             <div class="row gallery-wrapper">
                 <div class="element-item col-xl-4 col-sm-6 project designing development" data-category="designing development">

@@ -1,22 +1,7 @@
 <div class="container-fluid">
-    <div class="mx-n4 mt-n4">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="card mb-0">
-                    <div class="card-body p-0">
-                        <div class="profile-bg position-relative overflow-hidden">
-                            <div class="ms-5 mt-5">
-                                <h1 class="text-white"></h1>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
     <div class="row">
         <div class="col-xl-3">
-            <div class="card mt-n5">
+            <div class="card">
                 <div class="card-body text-center">
                     <div class="avatar-xl mx-auto mb-4">
                         <img src="<?php echo base_url('public/assets/images/users/Axley.jpg'); ?>" alt="Axley Herrera" class="rounded-circle img-thumbnail">
@@ -92,31 +77,47 @@
                 </div>
             </div>
         </div>
+
         <div class="col-xl-9">
-            <div class="mt-4">
+            <div>
                 <div class="row">
                     <div class="col-lg-8">
+
                         <div class="card">
                             <div class="card-body">
                                 <h5 class="card-title mb-2"><?php echo lang('Text.home_about_me'); ?></h5>
                                 <p class="mb-0"><?php echo lang('Text.home_about_me_info'); ?></p>
                             </div>
                         </div>
+
                         <div class="card">
                             <div class="card-body">
-                                <div class="hori-timeline">
-                                    <div class="swiper-container slider">
-                                        <div class="d-flex align-items-start">
-                                            <div class="flex-grow-1">
-                                                <h5 class="card-title mb-4"><?php echo lang('Text.home_experience'); ?></h5>
+                                <h5 class="card-title mb-2"><?php echo lang('Text.home_products'); ?></h5>
+                                <div class="row">
+                                    <div class="col-12 mb-2">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-md-4">
+                                                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/barberHi.png'); ?>" alt="barberHi" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-1"><?php echo lang('Text.projects_barber_hi'); ?></h5>
+                                                    <p class="card-text"><?php echo lang('Text.home_barberhi'); ?></p>
+                                                    <a href="https://barberhi.com/" target="_blank" class="btn btn-primary"><?php echo lang('Text.home_barberhi_more'); ?></a>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="event-list pb-2">
-                                                    <p class="font-size-13 text-primary">2019 - 2024</p>
-                                                    <h5 class="font-size-14 mb-1"><?php echo lang('Text.home_full_stack_developer'); ?></h5>
-                                                    <p class="text-muted mb-0">Ojeda's Computing LLC</p>
+                                    </div>
+                                    <div class="col-12 mb-2">
+                                        <div class="row no-gutters align-items-center">
+                                            <div class="col-md-4">
+                                                <img class="card-img img-fluid" src="<?php echo base_url('public/assets/images/factuHi.png'); ?>" alt="factuHi" />
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="card-body">
+                                                    <h5 class="card-title mb-1"><?php echo lang('Text.projects_factu_hi'); ?></h5>
+                                                    <p class="card-text"><?php echo lang('Text.home_factuhi'); ?></p>
+                                                    <a href="https://demofactuhi.axleyherrera.com/" target="_blank" class="btn btn-primary"><?php echo lang('Text.home_barberhi_more'); ?></a>
                                                 </div>
                                             </div>
                                         </div>
@@ -124,6 +125,7 @@
                                 </div>
                             </div>
                         </div>
+
                     </div>
                     <div class="col-lg-4">
                         <div class="card">
